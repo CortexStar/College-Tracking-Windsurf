@@ -103,28 +103,9 @@ export default function Header() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-56">
               <DropdownMenuItem asChild>
-                <Link href="/course" className="flex items-center gap-2">
+                <Link href="/course" className="flex items-center gap-2 w-full">
                   <GraduationCap className="h-4 w-4" />
                   {courseName}
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem asChild>
-                <Link href="/textbook" className="flex items-center gap-2">
-                  <Book className="h-4 w-4" />
-                  Textbook
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/grades" className="flex items-center gap-2">
-                  <BarChart className="h-4 w-4" />
-                  Grades
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/exams" className="flex items-center gap-2">
-                  <FileText className="h-4 w-4" />
-                  Exams
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
